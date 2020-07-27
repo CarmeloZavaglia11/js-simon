@@ -18,6 +18,12 @@ $('#numeriComp').append(numeriCasuali + ' ');
 
 setTimeout(gioco,5000);
 
+$('button').click(function(){
+
+    location.reload();
+
+});
+
 
 
 // ****FUNZIONI*****//
