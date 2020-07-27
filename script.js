@@ -11,7 +11,7 @@ while (numeriCasuali.length < 5){
     var numeroComputer = (numeriRandom(1,99));
     if (!checking(numeriCasuali,numeroComputer)){
         numeriCasuali.push(numeroComputer);
-    }  
+    }
 }
 
 $('#numeriComp').append(numeriCasuali + ' ');
@@ -30,15 +30,14 @@ $('button').click(function(){
 
 function gioco() {
     $('#numeriComp').text('');
-    var i = 0;
-    while (i < 5){
+    while (numeriUtente.length < 5){
         var numeroUtente = parseInt(prompt('prova ad indovinare i numeri ' + 'tentativo numero: ' + (5 - numeriUtente.length )));
         if (checking(numeriUtente,numeroUtente)) {
             alert('numero già inserito,riprovare');
         }  else {
             numeriUtente.push(numeroUtente);
         }
-        i++  
+        console.log(numeriUtente);
     }
 
 
@@ -50,9 +49,9 @@ function gioco() {
                 contatore += 1;
                 listaMatch.push(numeriCasuali[i]);
             }
-        } 
+        }
     }
-    
+
     if (listaMatch.length > 0) {
         $('#punteggio h2').text('COMPLIMENTI!');
         $('#punteggio p').text('Hai azzeccato ' + contatore + ' numeri su ' + numeriCasuali.length);
