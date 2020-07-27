@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#numeriComp {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 100px;
+    color: black;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+#numeriComp h1 {
+    font-size: 50px;
+}
+
+
+#punteggio {
+    width: 50%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 50px;
+    color: black;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#punteggio h3 {
+    font-size: 20px;
+}
